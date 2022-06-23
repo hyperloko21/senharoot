@@ -33,7 +33,7 @@ iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 iptables -A INPUT -p tcp --dport 8799 -j ACCEPT
 iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
 iptables -A INPUT -p tcp --dport 1194 -j ACCEPT
-iptables -A INPUT -p tcp --dport 7300 -j ACCEPT
+iptables -A INPUT -p udp --dport 7300 -j ACCEPT
 iptables -A INPUT -p tcp --dport 5454 -j ACCEPT
 clear && echo -ne "\033[1;32mDigite sua nova senha root\033[1;37m: "; read senha
 [[ -z "$senha" ]] && {
