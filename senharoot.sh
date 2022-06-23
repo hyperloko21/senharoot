@@ -1,5 +1,5 @@
-
-ob sofre
+#!/bin/bash
+# Noob sofre
 # nego não sabe entrar como Usuário root
 clear
 [[ "$(whoami)" != "root" ]] && {
